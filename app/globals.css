@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+}
+
+body {
+  background: var(--white);
+  color: var(--black);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--black);
+    color: var(--white);
+  }
+}
