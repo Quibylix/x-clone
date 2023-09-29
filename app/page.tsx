@@ -21,7 +21,8 @@ export default function Home() {
         avatarUrl="https://gravatar.com/avatar/252cb8ef15e0b121cbe9d54f051d3150?s=400&d=retro&r=x"
         profileName="Bot2"
         handle="bot2"
-        content="This is a larger test tweet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit ipsum fugit possimus minus labore dolore ratione temporibus illum nihil hic atque, sequi veniam quo id accusantium similique nam assumenda quod!"
+        content={`This is a tweet with
+a line break.`}
         comments={1}
         retweets={2}
         likes={3}
