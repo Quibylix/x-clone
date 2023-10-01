@@ -24,10 +24,6 @@
   margin: 0 auto;
 }
 
-.linkIcon svg {
-  vertical-align: top;
-}
-
 .linkLabel {
   display: none;
 }

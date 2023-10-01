@@ -16,6 +16,10 @@ body {
   color: var(--black);
 }
 
+svg {
+  vertical-align: top;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: var(--black);

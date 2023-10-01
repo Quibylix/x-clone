@@ -59,11 +59,13 @@ export default function Tweet({
             <LikeIcon />
             <span>{likes}</span>
           </li>
-          <div className={styles.stat}>
+          <li className={styles.stat}>
             <ViewIcon />
             <span>{views}</span>
-          </div>
-          <ShareIcon />
+          </li>
+          <li>
+            <ShareIcon />
+          </li>
         </ul>
       </div>
     </article>
