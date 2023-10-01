@@ -1,4 +1,4 @@
-import { Tweet } from "@/components";
+import { Navbar, Tweet } from "@/components";
 
 export const metadata = {
   title: "Home / X",
@@ -7,6 +7,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
+      <Navbar />
       <Tweet
         avatarUrl="https://gravatar.com/avatar/ba79001e355f4092cd4b47df9d1070a2?s=400&d=robohash&r=x"
         profileName="Bot1"

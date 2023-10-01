@@ -1,0 +1,62 @@
+.linksList {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.linksListItem {
+  display: none;
+  flex-grow: 1;
+}
+
+.linksListItem.displayInMobile {
+  display: block;
+}
+
+.link {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.6rem 0;
+  display: flex;
+}
+
+.linkIcon {
+  margin: 0 auto;
+}
+
+.linkLabel {
+  display: none;
+}
+
+@media (min-width: 495px) {
+  .linksList {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .linksListItem {
+    width: 100%;
+    display: block;
+  }
+
+  .linkIcon {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .link svg {
+    display: block;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+  }
+
+  .linkLabel {
+    display: block;
+  }
+}

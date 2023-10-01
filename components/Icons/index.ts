@@ -1,5 +1,15 @@
+export { default as BookmarkIcon } from "./BookmarkIcon";
 export { default as CommentIcon } from "./CommentIcon";
+export { default as CommunityIcon } from "./CommunityIcon";
+export { default as ExploreIcon } from "./ExploreIcon";
+export { default as HomeIcon } from "./HomeIcon";
 export { default as LikeIcon } from "./LikeIcon";
+export { default as ListIcon } from "./ListIcon";
+export { default as MessageIcon } from "./MessageIcon";
+export { default as MoreIcon } from "./MoreIcon";
+export { default as NotificationIcon } from "./NotificationIcon";
+export { default as ProfileIcon } from "./ProfileIcon";
 export { default as RetweetIcon } from "./RetweetIcon";
 export { default as ShareIcon } from "./ShareIcon";
 export { default as ViewIcon } from "./ViewIcon";
+export { default as XIcon } from "./XIcon";
