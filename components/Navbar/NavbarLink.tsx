@@ -20,7 +20,7 @@ type NavbarLinkProps = {
 
 export default function NavbarLink({ href, label }: NavbarLinkProps) {
   return (
-    <Link className={styles.link} href={href}>
+    <Link className={styles.link} href={href} aria-label={label}>
       <span className={styles.linkIcon}>
         <NavbarIconFromLabel label={label} />
       </span>
