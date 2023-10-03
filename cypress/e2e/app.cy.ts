@@ -4,4 +4,10 @@ describe("app general test", () => {
 
     cy.title().should("contain", "X");
   });
+
+  it("renders a navbar", () => {
+    cy.visit("http://localhost:3000");
+
+    cy.get("nav").should("exist");
+  });
 });

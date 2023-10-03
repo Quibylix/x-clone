@@ -16,6 +16,11 @@ body {
   color: var(--black);
 }
 
+html,
+body {
+  height: 100%;
+}
+
 svg {
   vertical-align: top;
 }
