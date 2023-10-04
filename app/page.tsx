@@ -1,4 +1,5 @@
-import { Header, Navbar, Tweet } from "@/components";
+import { Header, Navbar, Tweet, XIcon } from "@/components";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export const metadata = {
@@ -10,6 +11,11 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.navbarContainer}>
         <Navbar />
+      </div>
+      <div className={styles.logo}>
+        <Link className={styles.logoLink} href="/">
+          <XIcon />
+        </Link>
       </div>
       <div className={styles.headerContainer}>
         <Header />
