@@ -3,9 +3,10 @@
   display: grid;
   justify-content: center;
   grid-template-areas:
+    "header"
     "main"
     "nav";
-  grid-template-rows: 1fr max-content;
+  grid-template-rows: max-content 1fr max-content;
   grid-template-columns: 100%;
 }
 
@@ -14,12 +15,19 @@
   width: 100%;
 }
 
+.headerContainer {
+  grid-area: header;
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 495px) {
   .main {
-    grid-template-areas: "nav main";
+    grid-template-areas:
+      "nav header"
+      "nav main";
     grid-template-columns: max-content minmax(auto, 37.5rem);
-    grid-template-rows: 1fr;
-    gap: 3rem;
+    grid-template-rows: max-content 1fr;
+    gap: 0 3rem;
   }
 
   .navbarContainer {

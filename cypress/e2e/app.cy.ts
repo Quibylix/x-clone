@@ -10,4 +10,10 @@ describe("app general test", () => {
 
     cy.get("nav").should("exist");
   });
+
+  it("renders a header", () => {
+    cy.visit("http://localhost:3000");
+
+    cy.get("header").should("exist");
+  });
 });
