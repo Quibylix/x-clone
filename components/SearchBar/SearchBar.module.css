@@ -1,0 +1,37 @@
+.label {
+  position: relative;
+}
+
+.icon {
+  height: max-content;
+  position: absolute;
+  color: var(--slate-gray);
+  top: 0.06rem;
+  bottom: 0;
+  margin: auto;
+  left: 1rem;
+}
+
+.input {
+  background-color: var(--dark-gray);
+  padding: 0.8rem 0.35rem 0.8rem 3.5rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.input:focus-visible {
+  background-color: inherit;
+  outline: 0.06rem solid var(--azure);
+  color: var(--white);
+}
+
+.input:focus-visible ~ .icon {
+  color: var(--azure);
+}
