@@ -1,4 +1,4 @@
-import { Header, Navbar, Tweet, XIcon } from "@/components";
+import { Header, Navbar, PostIcon, Tweet, XIcon } from "@/components";
 import Link from "next/link";
 import styles from "./page.module.css";
 
@@ -11,6 +11,12 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.navbarContainer}>
         <Navbar />
+        <Link href="/" className={styles.postLink}>
+          <span className={styles.postLinkIcon}>
+            <PostIcon />
+          </span>
+          <span className={styles.postLinkLabel}>Post</span>
+        </Link>
       </div>
       <div className={styles.logo}>
         <Link className={styles.logoLink} href="/">

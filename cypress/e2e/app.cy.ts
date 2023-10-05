@@ -16,4 +16,10 @@ describe("app general test", () => {
 
     cy.get("header").should("exist");
   });
+
+  it("renders a button (link) to post", () => {
+    cy.visit("http://localhost:3000");
+
+    cy.get("a").contains("Post").should("exist");
+  });
 });

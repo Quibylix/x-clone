@@ -8,6 +8,7 @@ export { default as ListIcon } from "./ListIcon";
 export { default as MessageIcon } from "./MessageIcon";
 export { default as MoreIcon } from "./MoreIcon";
 export { default as NotificationIcon } from "./NotificationIcon";
+export { default as PostIcon } from "./PostIcon";
 export { default as ProfileIcon } from "./ProfileIcon";
 export { default as RetweetIcon } from "./RetweetIcon";
 export { default as ShareIcon } from "./ShareIcon";
