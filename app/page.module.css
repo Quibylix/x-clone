@@ -28,7 +28,6 @@
 
 .headerContainer {
   grid-area: header;
-  margin-bottom: 1rem;
 }
 
 @media (min-width: 495px) {
@@ -39,7 +38,6 @@
       "nav main";
     grid-template-columns: max-content minmax(auto, 37.5rem);
     grid-template-rows: max-content max-content 1fr;
-    gap: 0 3rem;
   }
 
   .navbarContainer {
@@ -51,10 +49,16 @@
   }
 
   .logoLink {
-    padding: 1rem 0;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 615px) {
+  .main {
+    gap: 0 1.5rem;
   }
 
-  .tweets {
-    padding: 1rem 0;
+  .logoLink {
+    padding: 1.2rem;
   }
 }
