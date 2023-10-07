@@ -45,6 +45,12 @@
   grid-area: header;
 }
 
+.aside {
+  display: none;
+  grid-area: aside;
+  padding: 1rem;
+}
+
 @media (min-width: 495px) {
   .main {
     grid-template-areas:
@@ -90,6 +96,21 @@
 
   .postLink {
     margin: 1rem 0.55rem 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main {
+    grid-template-areas:
+      "logo header aside"
+      "nav header aside"
+      "nav main aside";
+    grid-template-columns: max-content minmax(auto, 37.5rem) max-content;
+    grid-template-rows: max-content max-content 1fr;
+  }
+
+  .aside {
+    display: block;
   }
 }
 

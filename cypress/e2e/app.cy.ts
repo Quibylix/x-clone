@@ -22,4 +22,10 @@ describe("app general test", () => {
 
     cy.get("a").contains("Post").should("exist");
   });
+
+  it("renders a search bar", () => {
+    cy.visit("http://localhost:3000");
+
+    cy.get("input[type=search]").should("exist");
+  });
 });

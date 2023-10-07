@@ -1,4 +1,11 @@
-import { Header, Navbar, PostIcon, Tweet, XIcon } from "@/components";
+import {
+  Header,
+  Navbar,
+  PostIcon,
+  SearchBar,
+  Tweet,
+  XIcon,
+} from "@/components";
 import Link from "next/link";
 import styles from "./page.module.css";
 
@@ -26,6 +33,9 @@ export default function Home() {
       <div className={styles.headerContainer}>
         <Header />
       </div>
+      <aside className={styles.aside}>
+        <SearchBar />
+      </aside>
       <section className={styles.tweets}>
         <Tweet
           avatarUrl="https://gravatar.com/avatar/ba79001e355f4092cd4b47df9d1070a2?s=400&d=robohash&r=x"
